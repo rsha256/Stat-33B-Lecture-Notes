@@ -1,0 +1,49 @@
+\documentclass[11pt]{article}
+\usepackage{header}
+
+\def\P{\mathbb{P}} % Probability
+\def\d{\mathrm{d}}
+\def\zt{\stackrel{\mathcal{Z}}{\leftrightarrow}}
+\def\ft{\stackrel{\mathcal{F}}{\leftrightarrow}}
+\def\Xhat{\hat{X}(z)}
+\def\Yhat{\hat{Y}(z)}
+\def\Xhatu{\hat{x}(z)}
+\def\Yhatu{\hat{y}(z)}
+\def\Hhat{\hat{H}(z)}
+\def\zinv{z^{-1}}
+\def\zn{z^{-n}}
+\def\zpn{z^{n}}
+\def\zl{z^{-\ell}}
+\def\zpl{z^{\ell}}
+\def\zN{z^{-N}}
+\def\zpN{z^{N}}
+\def\zopn{z_{0}^{n}}
+
+\newcommand{\ze}[1]{z^{-#1}}
+\newcommand{\Xshat}[1]{\hat{X}_{\text{#1}}(z)}
+\newcommand{\Xphat}[1]{\hat{X}\left(#1\right)}
+\newcommand{\Hphat}[1]{\hat{H}\left(#1\right)}
+\newcommand{\pd}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\dv}[2]{\frac{\mathrm d{#1}}{\mathrm d{#2}}}
+\newcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\let\originalmiddle=\middle
+\DeclareMathOperator{\sgn}{sgn}
+
+\begin{document}
+% \setcounter{section}{8}
+    \title{EE 120 Lecture Notes}
+    
+    \thispagestyle{empty}
+
+    \begin{center}
+    {\LARGE \bf Lecture Notes}\\
+    {\large STAT 33B with Gaston Sanchez}\\
+    Fall 2023
+    \end{center}
+    
+    \tableofcontents
+
+    \include{./lectures/ack.tex}
+    % Note that I use include over input to force new page!
+    \include{./lectures/wk1/lecture1.tex}
+\end{document}
